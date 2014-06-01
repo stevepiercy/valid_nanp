@@ -20,7 +20,7 @@ any other arbitrary character.
 Demo
 ====
 
-`Demo <http://www.stevepiercy.com/lasso/valid_nanp/>`_.
+`Demo <http://www.stevepiercy.com/lasso/valid_nanp_demo/>`_.
 
 Usage
 =====
