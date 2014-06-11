@@ -3,7 +3,7 @@ valid_nanp - Validate phone numbers according to the North American Numbering Pl
 
 Read the article `valid_nanp - Validate phone numbers according to the North
 American Numbering Plan
-<http://www.stevepiercy.com/valid_nanp-validate-phone-numbers-according-to-the-north-american-numbering-plan.html>`_.
+<http://www.stevepiercy.com/articles/valid_nanp-validate-phone-numbers-according-to-the-north-american-numbering-plan/>`_.
 
 Description
 ===========
