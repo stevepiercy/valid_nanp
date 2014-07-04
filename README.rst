@@ -64,6 +64,6 @@ Installation
 ============
 
 The repository contains both the tag ``[valid_nanp]`` in a file named
-``valid_nanp.inc`` and a directory ``valid_nanp_demo`` containing the demo.
+``valid_nanp.lasso`` and a directory ``valid_nanp_demo`` containing the demo.
 In this directory there is a web page named ``index.lasso`` containing the
 ``valid_nanp`` tag and a web form.

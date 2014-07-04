@@ -1,8 +1,8 @@
 ﻿[
-// Either load the file valid_nanp.inc during server or site startup,
+// Either load the file valid_nanp.lasso during server or site startup,
 // in server or site library, or include it.  Choose one method.
 // I recommend site startup.
-// include('valid_nanp.inc'); // optional loading method
+// include('valid_nanp.lasso'); // optional loading method
 ]<!DOCTYPE html>
 <html>
 <head>
