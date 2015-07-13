@@ -47,7 +47,7 @@ define valid_nanp(
 /* 
 
 // tests
-local(n) = '831-479-3456'
+local(n) = '415-555-5555'
 // local(n) = bytes('1234567890')
 // local(n) = '8004567890x123'
 '<br>'
