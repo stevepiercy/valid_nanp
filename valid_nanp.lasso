@@ -28,7 +28,7 @@ define valid_nanp(
         // format the number only if requested and is a valid phone number
         local(f) = string // formatted output
         local(d) = 1  // digit index position
-        iterate(#format -> split(''), local(i)) => {
+        with i in #format -> split('') do {
             if(#number -> size > 10 || #d <= 10) => {
                 if(#i == '#') => {
                     #f -> append(#number -> substring(#d, 1))
