@@ -17,6 +17,10 @@ permitted, where any digit beyond the first 10 digits forms the extension.
 Optionally formats the output, substituting ``#`` for digits, and inserting
 any other arbitrary character.
 
+``[valid_nanp]`` has versions available for either `Lasso 8
+<https://github.com/stevepiercy/valid_nanp/tree/lasso8>`_ or `Lasso 9
+<https://github.com/stevepiercy/valid_nanp/tree/lasso9>`_.
+
 Demo
 ====
 
