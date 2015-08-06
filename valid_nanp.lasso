@@ -20,22 +20,25 @@ define valid_nanp(
     if(integer(#number->substring(1,1)) >= 2
         && integer(#number->substring(2,1)) <= 8
         && integer(#number->substring(4,1)) >= 2
-        && #number->size >= 10) => {
+        && #number -> size >= 10) => {
         #v = true
     }
 
-    if(#format -> size && #v) => {
+    if(#format -> size > 0 && #v) => {
         // format the number only if requested and is a valid phone number
-        local(f) = string // formatted output
-        local(d) = 1  // digit index position
+        local(f) = string   // formatted output
+        local(d) = 1    // digit index position
         with i in #format -> split('') do {
-            if(#number -> size > 10 || #d <= 10) => {
-                if(#i == '#') => {
+            if(#i == '#') => {
+                if(#d <= #number -> size) => {
+                    // append a digit from #number to the formatted number
+                    // as long as there are digits left to extract from #number
                     #f -> append(#number -> substring(#d, 1))
                     #d += 1
-                else
-                    #f -> append(#i)
                 }
+            else
+                // append the character to the formatted number
+                #f -> append(#i)
             }
         }
         return(#f)
@@ -49,7 +52,8 @@ define valid_nanp(
 // tests
 local(n) = '415-555-5555'
 // local(n) = bytes('1234567890')
-// local(n) = '8004567890x123'
+local(n) = '800-456-7890x12'
+local(n) = '800-456-7890x1234'
 '<br>'
 #n = string(#n)
 '<br>'
