@@ -29,16 +29,16 @@ define valid_nanp(
         local(f) = string   // formatted output
         local(d) = 1    // digit index position
         with i in #format -> split('') do {
-            if(#i == '#') => {
-                if(#d <= #number -> size) => {
+            if(#d <= #number -> size) => {
+                if(#i == '#') => {
                     // append a digit from #number to the formatted number
                     // as long as there are digits left to extract from #number
                     #f -> append(#number -> substring(#d, 1))
                     #d += 1
+                else
+                    // append the character to the formatted number
+                    #f -> append(#i)
                 }
-            else
-                // append the character to the formatted number
-                #f -> append(#i)
             }
         }
         return(#f)
@@ -47,7 +47,7 @@ define valid_nanp(
         return(#v)
     }
 }
-/* 
+/*
 
 // tests
 local(n) = '415-555-5555'
