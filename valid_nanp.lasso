@@ -14,7 +14,7 @@ define valid_nanp(
     local(v) = false    // local stores whether a number is valid
     // Strip non-digits
     #number = string_replaceregexp(#number, -find='\\D', -replace='')
-    #number -> size == 0 ? return false
+    #number -> size < 10 ? return false
 
     // validation requirements according to NANP, with optional extension
     if(integer(#number->substring(1,1)) >= 2
